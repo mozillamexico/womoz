@@ -45,7 +45,7 @@ p {
 }
 
 a {
-    color: #42dca3;
+    color: gray;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -89,7 +89,7 @@ a:focus {
 }
 
 .navbar-custom a {
-    color: #fff;
+    color: #FFF;
 }
 
 .navbar-custom .nav li a {
@@ -136,8 +136,13 @@ a:focus {
     .navbar-custom.top-nav-collapse {
         padding: 0;
         border-bottom: 1px solid rgba(255,255,255,.3);
-        background: #FF4E00;
+        background: #FFF;
+        color:black;
+
         /*background: #C76547;*/
+    }
+    .hide-header-logo {
+      display: none;
     }
 }
 
@@ -150,7 +155,7 @@ a:focus {
     color: #fff;
     background-color: #00CAF2;
     /*background: url(../background.png) no-repeat bottom center scroll;
-    
+
     opacity: 0.9;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -226,7 +231,7 @@ a:focus {
     -moz-animation-timing-function: linear;
 }
 
-@-webkit-keyframes pulse {    
+@-webkit-keyframes pulse {
     0% {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -243,7 +248,7 @@ a:focus {
     }
 }
 
-@-moz-keyframes pulse {    
+@-moz-keyframes pulse {
     0% {
         -moz-transform: scale(1);
         transform: scale(1);
@@ -372,9 +377,55 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #BB3D3F;
 }
-.navbar-brand img{
-    width: 120px;
-    height: 120px;
-    margin-top: -35%;
+.navbar-brand img {
+    width: 200px;
+    height: 60px;
+    margin-top: -8%;
+}
 
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+#header-logo{
+  position: absolute;
+  width: 100%;
+  top:0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+}
+#header-logo img{
+  margin-top: 15%;
+  width: 50%;
+
+}
+.navbar {
+    min-height: 60px;
+}
+@media (min-width: 768px)
+.navbar-nav>li>a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.scroll-menu-option{
+  color:black!important;
 }

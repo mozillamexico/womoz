@@ -1,9 +1,16 @@
 // jQuery to collapse the navbar on scroll
 function collapseNavbar() {
     if ($(".navbar").offset().top > 50) {
-        $(".navbar-fixed-top").addClass("top-nav-collapse");
+      $(".navbar-fixed-top").addClass("top-nav-collapse");
+      $(".menu-option").addClass("scroll-menu-option");
     } else {
-        $(".navbar-fixed-top").removeClass("top-nav-collapse");
+      $(".navbar-fixed-top").removeClass("top-nav-collapse");
+      $(".menu-option").removeClass("scroll-menu-option");
+    }
+    if ($(".navbar").offset().top < 50) {
+        $(".navbar-brand").addClass("hide-header-logo");
+    } else {
+        $(".navbar-brand").removeClass("hide-header-logo");
     }
 }
 
