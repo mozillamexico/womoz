@@ -299,11 +299,11 @@ a:focus {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 250px;
+        padding-top: 150px;
     }
 
     .download-section {
-        padding: 100px 0;
+        padding: 50px 0;
     }
 
     #map {
@@ -359,7 +359,7 @@ ul.banner-social-buttons {
 }
 
 footer {
-    padding: 50px 0;
+    padding: 0px 0;
 }
 
 footer p {
@@ -451,4 +451,8 @@ body {
 }
 #contact{
   background-color: #FF4E00;
+}
+.logo{
+  padding-top: 10px;
+  width: 300px;
 }
