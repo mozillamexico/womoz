@@ -7,11 +7,7 @@ function collapseNavbar() {
       $(".navbar-fixed-top").removeClass("top-nav-collapse");
       $(".menu-option").removeClass("scroll-menu-option");
     }
-    if ($(".navbar").offset().top < 50) {
-        $(".navbar-brand").addClass("hide-header-logo");
-    } else {
-        $(".navbar-brand").removeClass("hide-header-logo");
-    }
+
 }
 
 $(window).scroll(collapseNavbar);
