@@ -1,0 +1,131 @@
+/**
+* Theme Name: Customizr
+* Theme URI: http://presscustomizr.com/customizr
+* Description: Customizr is a versatile and easy to customize WordPress theme, instantly giving a professional look to your online presence. Designed with visitor engagement in mind, it allows anyone to create a beautiful, fast and mobile friendly website compatible with all browsers and devices. Customizr works fine with major WordPress plugins like WooCommerce, bbPress, JetPack and many others. Top rated by hundreds and with a very active community of users and developers, the Customizr theme is a safe and reliable design option to publish your WordPress content.
+* Version: 3.4.21
+* Author: nikeo
+* Author URI: http://presscustomizr.com/
+* Tags: gray, white, light, blue, red, yellow, green, purple, orange, black, one-column, two-columns, three-columns, left-sidebar, right-sidebar, fluid-layout, responsive-layout, buddypress, custom-menu, custom-colors, featured-images, full-width-template, theme-options, threaded-comments, translation-ready, sticky-post, post-formats, rtl-language-support, editor-style
+* Text Domain: customizr
+* Copyright: (c) 2015 Nicolas GUILLAUME (nikeo), Nice, France
+* License: GNU General Public License v2.0 or later
+* License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+
+/**
+* The styleheets of Customizr are located in inc/assets/css. Each skin has its own stylesheet : blue.css, green.css, ...
+* The current stylesheet is loaded after the main skin stylesheet.
+*
+* IMPORTANT : If you write your CSS code below, it will be deleted when you'll update the theme.
+* If you want to make quick style test / changes, consider using the Custom CSS section in appearance > customize > advanced options > Custom CSS, it will persist on update since it is saved in your database.
+* To make important CSS customizations, you'll want to use a child theme and add your css code in the style.css file of it.
+*/
+
+body{
+background: #1e5799; /* Old browsers */
+background: -moz-linear-gradient(top, #1e5799 0%, #d4dde4 0%, #eaeff2 33%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #1e5799 0%,#d4dde4 0%,#eaeff2 33%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #1e5799 0%,#d4dde4 0%,#eaeff2 33%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#eaeff2',GradientType=0 ); /* IE6-9 */
+}
+.tagcloud{
+  text-align: center
+}
+#tc-page-wrap{
+  margin-top: -42px;
+}
+#tabzilla, #tabzilla2 {
+    display: block;
+    float: right;
+    background: url("tabzilla.png");
+    height: 44px;
+    width: 150px;
+    position: relative;
+    text-indent: -2000px;
+    overflow: hidden;
+    z-index: 1000;
+    margin-top: -8px;
+}
+
+.menu-opciones-container{
+  float: left !important;
+}
+.sticky-enabled .tc-shrink-on .brand .site-title {
+   margin: 10px 0px 0px;
+}
+
+.btn_comentario{
+  width: 150px !important;
+float: right !important;
+clear: both !important;
+margin-bottom: 15px !important;
+}
+
+.tc-sidebar{
+  margin-top: 20px;
+}
+.box_social{
+  padding-left: 10%;
+}
+.tc-grid-figure .no-thumb{
+opacity: 1 !important;
+}
+@font-face {
+          font-family: 'Open Sans';
+		  src:url('open_sans/OpenSans-Regular.eot');
+      src:url('open_sans/OpenSans-Regular.ttf');
+}
+.site-title, .site-description, h1, h2, h3, .tc-dropcap ,body, .navbar .nav > li > a {
+    font-family: 'Open Sans';
+}
+
+
+.large {
+  font-size: 72px;
+  letter-spacing: -3px;
+  line-height: 100%;
+}
+.widget-title{
+  font-size: 23px;
+}
+h1 {
+  font-size: 48px;
+  letter-spacing: -2px;
+  line-height: 100%;
+}
+h2 {
+  font-size: 32px;
+  letter-spacing: -1px;
+  line-height: 100%;
+}
+h3 {
+  font-size: 28px;
+  letter-spacing: -0.5px;
+  line-height: 100%;
+}
+h4 {
+  font-size: 24px;
+  letter-spacing: -0.25px;
+  line-height: 100%;
+}
+.small, small {
+  font-size: 12px;
+  line-height: 100%;
+}
+
+hr {
+  margin: 20px 0;
+  border: 0;
+  /*border-top: 1px solid #eeeeee;*/
+  border-bottom: 3px solid #0095DD;
+}
+
+.navbar .nav > li > a{
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.wrapper_fp{
+  background:#C13832;margin-top: -20px; color: white; padding: 30px 0px;
+}
